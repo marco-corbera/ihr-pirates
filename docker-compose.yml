@@ -1,0 +1,11 @@
+version: '3.8'  # or any version that matches your Docker Engine
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    image: frontend:latest
+
